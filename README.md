@@ -1,2 +1,3 @@
 # project-countdown
-happy new year
+
+https://uidesigndaily.com/posts/skeetch-countdown-timer-day-876
