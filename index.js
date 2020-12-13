@@ -6,6 +6,10 @@ const secondsEl = document.querySelector(".seconds");
 let years = new Date().getFullYear();
 const newYears = `1 Jan ${years + 1}`;
 
+function formatTime(time) {
+  return time < 10 ? `0${time}` : time;
+}
+
 function countdown() {
   const newYearsDate = new Date(newYears);
   const currentDate = new Date();
@@ -24,10 +28,6 @@ function countdown() {
   hoursEl.innerText = formatTime(hours);
   minuteEl.innerText = formatTime(minutes);
   secondsEl.innerText = formatTime(seconds);
-}
-
-function formatTime(time) {
-  return time < 10 ? `0${time}` : time;
 }
 
 const init = () => setInterval(countdown, 1000);
