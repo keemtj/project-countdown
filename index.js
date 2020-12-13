@@ -14,7 +14,7 @@ function countdown() {
   const hours = Math.floor(totalSeconds / 3600) % 24;
   const minutes = Math.floor(totalSeconds / 60) % 60;
   const seconds = Math.floor(totalSeconds) % 60;
-  console.log(days, hours, minutes, seconds);
+  // console.log(days, hours, minutes, seconds);
 
   if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
     years += 1;
@@ -31,6 +31,5 @@ function formatTime(time) {
 }
 
 const init = () => setInterval(countdown, 1000);
-// const init = () => countdown();
 
 window.addEventListener("load", init);
