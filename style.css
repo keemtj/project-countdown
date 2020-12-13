@@ -1,5 +1,5 @@
 @import 'reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,18 +12,17 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 h1 {
   font-size: 8rem;
-  font-weight: lighter;
+  font-weight: 200;
   margin-top: -5rem;
 }
 
 .countdown-container {
   display: flex;
-  min-width: 20vw;
 }
 
 .countdown {
@@ -32,13 +31,24 @@ h1 {
 
 .time-count {
   font-size: 8rem;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 1;
-  margin: 2rem 2rem 0rem;
+  margin: 2rem 0rem
 }
 
-.countdown span {
+.countdown .days,
+.countdown .seconds,
+.countdown .minutes,
+.countdown .hours {
+  width: 15rem;
+}
+
+.countdown .seconds {
+  color:#f03e3e;
+}
+
+.countdown > span {
   font-size: 1.8rem;
-  line-height: 1;
   font-weight: normal;
+  line-height: 1;
 }
